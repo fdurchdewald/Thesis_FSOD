@@ -1007,27 +1007,27 @@
         {
             "supercategory": "tool",
             "id": 1,
-            "name": "screwdriver0"
+            "name": "drill_1"
         },
         {
             "supercategory": "tool",
             "id": 2,
-            "name": "screwdriver1"
+            "name": "drill_2"
         },
         {
             "supercategory": "tool",
             "id": 3,
-            "name": "screwdriver2"
+            "name": "drill_3"
         },
         {
             "supercategory": "tool",
             "id": 4,
-            "name": "screwdriver3"
+            "name": "drill_4"
         },
         {
             "supercategory": "tool",
             "id": 5,
-            "name": "screwdriver4"
+            "name": "drill_5"
         }
     ]
 }
