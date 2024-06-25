@@ -1,0 +1,181 @@
+[06/25 11:53:07] detectron2 INFO: Rank of current process: 0. World size: 1
+[06/25 11:53:07] detectron2 INFO: Environment info:
+---------------------  ---------------------------------------------------------------------------------------------
+sys.platform           darwin
+Python                 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:05:53) [Clang 12.0.5 (clang-1205.0.22.9)]
+numpy                  1.22.4
+detectron2             RegionCLIP @/Users/felixdurchdewald/devBA/DeViT/devit/tools/../detectron2
+Compiler               clang 15.0.0
+CUDA compiler          not available
+DETECTRON2_ENV_MODULE  <not set>
+PyTorch                1.13.1 @/Users/felixdurchdewald/devBA/DeViT/venvDevit/lib/python3.9/site-packages/torch
+PyTorch debug build    False
+GPU available          False
+Pillow                 9.5.0
+torchvision            0.14.1 @/Users/felixdurchdewald/devBA/DeViT/venvDevit/lib/python3.9/site-packages/torchvision
+fvcore                 0.1.5.post20221221
+iopath                 0.1.8
+cv2                    Not found
+---------------------  ---------------------------------------------------------------------------------------------
+PyTorch built with:
+  - GCC 4.2
+  - C++ Version: 201402
+  - clang 14.0.0
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: NO AVX
+  - Build settings: BLAS_INFO=accelerate, BUILD_TYPE=Release, CXX_COMPILER=/Applications/Xcode_14.0.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -Wno-deprecated-declarations -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOCUPTI -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DUSE_PYTORCH_METAL_EXPORT -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -DUSE_COREML_DELEGATE -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wunused-local-typedefs -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wvla-extension -Wno-range-loop-analysis -Wno-pass-failed -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -Wconstant-conversion -Wno-invalid-partial-specialization -Wno-typedef-redefinition -Wno-unused-private-field -Wno-inconsistent-missing-override -Wno-c++14-extensions -Wno-constexpr-not-const -Wno-missing-braces -Wunused-lambda-capture -Wunused-local-typedef -Qunused-arguments -fcolor-diagnostics -fdiagnostics-color=always -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -DUSE_MPS -fno-objc-arc -Wno-unguarded-availability-new -Wno-unused-private-field -Wno-missing-braces -Wno-c++14-extensions -Wno-constexpr-not-const, LAPACK_INFO=accelerate, TORCH_VERSION=1.13.1, USE_CUDA=OFF, USE_CUDNN=OFF, USE_EIGEN_FOR_BLAS=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=OFF, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=OFF, USE_ROCM=OFF, 
+
+[06/25 11:53:07] detectron2 INFO: Command line arguments: Namespace(config_file='configs/few-shot/vitl_shot10.yaml', resume=False, eval_only=True, num_gpus=0, num_machines=1, machine_rank=0, dist_url='auto', opts=['MODEL.WEIGHTS', 'weights/trained/few-shot/vitl_0089999.pth', 'DE.OFFLINE_RPN_CONFIG', 'configs/RPN/mask_rcnn_R_50_C4_1x_ovd_FSD.yaml', 'OUTPUT_DIR', 'output/eval/few-shot/shot-10/vitl/'])
+[06/25 11:53:07] detectron2 INFO: Contents of args.config_file=configs/few-shot/vitl_shot10.yaml:
+[38;5;204m_BASE_[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186m../Base-RCNN-C4.yaml[39m[38;5;186m"[39m
+[38;5;204mDE[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mCLASS_PROTOTYPES[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mweights/prototypes/fine_grained/bboxes/ten_shots.pth,[39m[38;5;15m [39m[38;5;186mweights/initial/few-shot/prototypes/fs_coco14_base_train_norm.vitl14.pkl[39m[38;5;186m"[39m
+[38;5;15m  [39m[38;5;204mBG_PROTOTYPES[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mweights/initial/background/background_prototypes.vitl14.pth[39m[38;5;186m"[39m
+[38;5;15m  [39m[38;5;204mBG_CLS_LOSS_WEIGHT[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m0.2[39m
+[38;5;15m  [39m[38;5;204mTOPK[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m5[39m
+
+[38;5;204mMODEL[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mMETA_ARCHITECTURE[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mOpenSetDetectorWithExamples[39m[38;5;186m"[39m
+[38;5;15m  [39m[38;5;204mBACKBONE[39m[38;5;15m:[39m
+[38;5;15m    [39m[38;5;204mNAME[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mbuild_dino_v2_vit[39m[38;5;186m"[39m
+[38;5;15m    [39m[38;5;204mTYPE[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mlarge[39m[38;5;186m"[39m[38;5;15m [39m[38;5;245m# base, small[39m
+[38;5;15m  [39m[38;5;204mWEIGHTS[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186m"[39m[38;5;15m [39m
+[38;5;15m  [39m[38;5;204mMASK_ON[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141mFalse[39m
+[38;5;15m  [39m[38;5;204mRPN[39m[38;5;15m:[39m
+[38;5;15m    [39m[38;5;204mHEAD_NAME[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141mStandardRPNHead[39m
+[38;5;15m    [39m[38;5;204mIN_FEATURES[39m[38;5;15m:[39m[38;5;15m [39m[38;5;15m[[39m[38;5;186m"[39m[38;5;186mres4[39m[38;5;186m"[39m[38;5;15m][39m
+[38;5;15m  [39m[38;5;204mROI_HEADS[39m[38;5;15m:[39m
+[38;5;15m    [39m[38;5;204mSCORE_THRESH_TEST[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m0.001[39m
+[38;5;15m  [39m[38;5;204mROI_BOX_HEAD[39m[38;5;15m:[39m
+[38;5;15m    [39m[38;5;204mNAME[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186m"[39m
+[38;5;15m    [39m[38;5;204mNUM_FC[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m0[39m
+[38;5;15m    [39m[38;5;204mPOOLER_RESOLUTION[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m7[39m
+[38;5;15m    [39m[38;5;204mCLS_AGNOSTIC_BBOX_REG[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141mTrue[39m
+[38;5;15m  [39m[38;5;204mPIXEL_MEAN[39m[38;5;15m:[39m[38;5;15m [39m[38;5;15m[[39m[38;5;15m0.48145466[39m[38;5;15m,[39m[38;5;15m [39m[38;5;15m0.4578275[39m[38;5;15m,[39m[38;5;15m [39m[38;5;15m0.40821073[39m[38;5;15m][39m
+[38;5;15m  [39m[38;5;204mPIXEL_STD[39m[38;5;15m:[39m[38;5;15m [39m[38;5;15m[[39m[38;5;15m0.26862954[39m[38;5;15m,[39m[38;5;15m [39m[38;5;15m0.26130258[39m[38;5;15m,[39m[38;5;15m [39m[38;5;15m0.27577711[39m[38;5;15m][39m
+[38;5;204mINPUT[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mMIN_SIZE_TRAIN[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m(640,[39m[38;5;141m [39m[38;5;141m672,[39m[38;5;141m [39m[38;5;141m704,[39m[38;5;141m [39m[38;5;141m736,[39m[38;5;141m [39m[38;5;141m768,[39m[38;5;141m [39m[38;5;141m800)[39m
+[38;5;204mDATASETS[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mTRAIN[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m("fs_coco14_base_train",)[39m
+[38;5;15m  [39m[38;5;204mTEST[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m("fine_grained_test",)[39m
+[38;5;204mTEST[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mEVAL_PERIOD[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m5000[39m
+[38;5;204mSOLVER[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mIMS_PER_BATCH[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m16[39m
+[38;5;15m  [39m[38;5;204mBASE_LR[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m0.002[39m
+[38;5;15m  [39m[38;5;204mSTEPS[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m(60000,[39m[38;5;141m [39m[38;5;141m80000)[39m
+[38;5;15m  [39m[38;5;204mMAX_ITER[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m90000[39m
+[38;5;15m  [39m[38;5;204mWARMUP_ITERS[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m5000[39m
+[38;5;15m  [39m[38;5;204mCHECKPOINT_PERIOD[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m5000[39m
+
+
+[38;5;204mINPUT[39m[38;5;15m:[39m
+[38;5;15m  [39m[38;5;204mMIN_SIZE_TRAIN_SAMPLING[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141mchoice[39m
+[38;5;15m  [39m[38;5;204mMIN_SIZE_TRAIN[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m(640,[39m[38;5;141m [39m[38;5;141m672,[39m[38;5;141m [39m[38;5;141m704,[39m[38;5;141m [39m[38;5;141m736,[39m[38;5;141m [39m[38;5;141m768,[39m[38;5;141m [39m[38;5;141m800)[39m
+[38;5;15m  [39m[38;5;204mMAX_SIZE_TRAIN[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m1333[39m
+[38;5;15m  [39m[38;5;204mMIN_SIZE_TEST[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m800[39m
+[38;5;15m  [39m[38;5;204mMAX_SIZE_TEST[39m[38;5;15m:[39m[38;5;15m [39m[38;5;141m1333[39m
+[38;5;15m  [39m[38;5;204mFORMAT[39m[38;5;15m:[39m[38;5;15m [39m[38;5;186m"[39m[38;5;186mRGB[39m[38;5;186m"[39m
+
+[06/25 11:53:07] detectron2 INFO: Full config saved to output/eval/few-shot/shot-10/vitl/config.yaml
+[06/25 11:53:07] d2.utils.env INFO: Using a generated random seed 7862477
+[06/25 11:53:11] fvcore.common.checkpoint INFO: [Checkpointer] Loading from weights/trained/few-shot/vitl_0089999.pth ...
+[06/25 11:53:12] d2.data.datasets.coco INFO: Loaded 15 images in COCO format from /Users/felixdurchdewald/devBA/DeViT/devit/datasets/fine_grained/annotations/test_annotations.json
+[06/25 11:53:12] d2.data.build INFO: Distribution of instances among all 65 categories:
+[36m|   category    | #instances   |   category   | #instances   |   category    | #instances   |
+|:-------------:|:-------------|:------------:|:-------------|:-------------:|:-------------|
+|    drill_1    | 13           |   drill_2    | 13           |    drill_3    | 14           |
+|    drill_4    | 10           |   drill_5    | 11           |     truck     | 0            |
+| traffic light | 0            | fire hydrant | 0            |   stop sign   | 0            |
+| parking meter | 0            |    bench     | 0            |   elephant    | 0            |
+|     bear      | 0            |    zebra     | 0            |    giraffe    | 0            |
+|   backpack    | 0            |   umbrella   | 0            |    handbag    | 0            |
+|      tie      | 0            |   suitcase   | 0            |    frisbee    | 0            |
+|     skis      | 0            |  snowboard   | 0            |  sports ball  | 0            |
+|     kite      | 0            | baseball bat | 0            | baseball gl.. | 0            |
+|  skateboard   | 0            |  surfboard   | 0            | tennis racket | 0            |
+|  wine glass   | 0            |     cup      | 0            |     fork      | 0            |
+|     knife     | 0            |    spoon     | 0            |     bowl      | 0            |
+|    banana     | 0            |    apple     | 0            |   sandwich    | 0            |
+|    orange     | 0            |   broccoli   | 0            |    carrot     | 0            |
+|    hot dog    | 0            |    pizza     | 0            |     donut     | 0            |
+|     cake      | 0            |     bed      | 0            |    toilet     | 0            |
+|    laptop     | 0            |    mouse     | 0            |    remote     | 0            |
+|   keyboard    | 0            |  cell phone  | 0            |   microwave   | 0            |
+|     oven      | 0            |   toaster    | 0            |     sink      | 0            |
+| refrigerator  | 0            |     book     | 0            |     clock     | 0            |
+|     vase      | 0            |   scissors   | 0            |  teddy bear   | 0            |
+|  hair drier   | 0            |  toothbrush  | 0            |               |              |
+|     total     | 61           |              |              |               |              |[0m
+[06/25 11:53:12] d2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[06/25 11:53:12] d2.data.common INFO: Serializing 15 elements to byte tensors and concatenating them all ...
+[06/25 11:53:12] d2.data.common INFO: Serialized dataset takes 0.01 MiB
+[06/25 11:53:12] d2.evaluation.evaluator INFO: Start inference on 15 batches
+[06/25 11:54:00] d2.evaluation.evaluator INFO: Inference done 1/15. Dataloading: 1.8048 s / iter. Inference: 47.0074 s / iter. Eval: 0.0129 s / iter. Total: 48.8260 s / iter. ETA=0:11:23
+[06/25 11:54:48] d2.evaluation.evaluator INFO: Inference done 2/15. Dataloading: 0.9105 s / iter. Inference: 47.4736 s / iter. Eval: 0.0076 s / iter. Total: 48.3958 s / iter. ETA=0:10:29
+[06/25 11:55:36] d2.evaluation.evaluator INFO: Inference done 3/15. Dataloading: 0.6073 s / iter. Inference: 47.6334 s / iter. Eval: 0.0054 s / iter. Total: 48.2495 s / iter. ETA=0:09:38
+[06/25 11:56:25] d2.evaluation.evaluator INFO: Inference done 4/15. Dataloading: 0.4559 s / iter. Inference: 47.9230 s / iter. Eval: 0.0043 s / iter. Total: 48.3860 s / iter. ETA=0:08:52
+[06/25 11:56:57] d2.evaluation.evaluator INFO: Inference done 5/15. Dataloading: 0.3689 s / iter. Inference: 44.7718 s / iter. Eval: 0.0036 s / iter. Total: 45.1468 s / iter. ETA=0:07:31
+[06/25 11:57:44] d2.evaluation.evaluator INFO: Inference done 6/15. Dataloading: 0.0000 s / iter. Inference: 46.3284 s / iter. Eval: 0.0014 s / iter. Total: 46.3298 s / iter. ETA=0:06:56
+[06/25 11:58:26] d2.evaluation.evaluator INFO: Inference done 7/15. Dataloading: 0.0004 s / iter. Inference: 44.2630 s / iter. Eval: 0.0012 s / iter. Total: 44.2650 s / iter. ETA=0:05:54
+[06/25 11:59:10] d2.evaluation.evaluator INFO: Inference done 8/15. Dataloading: 0.0007 s / iter. Inference: 44.1117 s / iter. Eval: 0.0012 s / iter. Total: 44.1141 s / iter. ETA=0:05:08
+[06/25 11:59:49] d2.evaluation.evaluator INFO: Inference done 9/15. Dataloading: 0.0015 s / iter. Inference: 42.8268 s / iter. Eval: 0.0013 s / iter. Total: 42.8302 s / iter. ETA=0:04:16
+[06/25 12:00:34] d2.evaluation.evaluator INFO: Inference done 10/15. Dataloading: 0.0018 s / iter. Inference: 43.3475 s / iter. Eval: 0.0011 s / iter. Total: 43.3511 s / iter. ETA=0:03:36
+[06/25 12:01:25] d2.evaluation.evaluator INFO: Inference done 11/15. Dataloading: 0.0018 s / iter. Inference: 44.5680 s / iter. Eval: 0.0012 s / iter. Total: 44.5719 s / iter. ETA=0:02:58
+[06/25 12:02:23] d2.evaluation.evaluator INFO: Inference done 12/15. Dataloading: 0.0019 s / iter. Inference: 46.5197 s / iter. Eval: 0.0013 s / iter. Total: 46.5238 s / iter. ETA=0:02:19
+[06/25 12:03:14] d2.evaluation.evaluator INFO: Inference done 13/15. Dataloading: 0.0020 s / iter. Inference: 47.1355 s / iter. Eval: 0.0011 s / iter. Total: 47.1395 s / iter. ETA=0:01:34
+[06/25 12:04:42] d2.evaluation.evaluator INFO: Inference done 14/15. Dataloading: 0.0021 s / iter. Inference: 46.4474 s / iter. Eval: 0.0011 s / iter. Total: 46.4515 s / iter. ETA=0:00:46
+[06/25 12:05:24] d2.evaluation.evaluator INFO: Inference done 15/15. Dataloading: 0.0021 s / iter. Inference: 45.9701 s / iter. Eval: 0.0015 s / iter. Total: 45.9746 s / iter. ETA=0:00:00
+[06/25 12:05:44] d2.evaluation.evaluator INFO: Total inference time: 0:07:59.772666 (47.977267 s / iter per device, on 1 devices)
+[06/25 12:05:44] d2.evaluation.evaluator INFO: Total inference pure compute time: 0:07:39 (45.970108 s / iter per device, on 1 devices)
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Preparing results for COCO format ...
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Saving results to /Users/felixdurchdewald/devBA/DeViT/devit/output/ten_shots/bboxes/coco_instances_results.json
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Evaluating predictions with unofficial COCO API...
+[06/25 12:05:44] d2.evaluation.fast_eval_api INFO: Evaluate annotation type *bbox*
+[06/25 12:05:44] d2.evaluation.fast_eval_api INFO: COCOeval_opt.evaluate() finished in 0.03 seconds.
+[06/25 12:05:44] d2.evaluation.fast_eval_api INFO: Accumulating evaluation results...
+[06/25 12:05:44] d2.evaluation.fast_eval_api INFO: COCOeval_opt.accumulate() finished in 0.06 seconds.
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs  |  APm  |  APl   |
+|:------:|:------:|:------:|:-----:|:-----:|:------:|
+| 34.152 | 49.905 | 40.116 |  nan  |  nan  | 34.153 |
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Some metrics cannot be computed and is shown as NaN.
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: target AP50: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: base AP50: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: all AP50: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: target AP75: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: base AP75: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: all AP75: -1
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: target mAP: -1.0
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: base mAP: -1.0
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: all mAP: -1.0
+[06/25 12:05:44] d2.evaluation.coco_evaluation INFO: Per-category bbox AP: 
+| category      | AP     | category     | AP     | category       | AP     |
+|:--------------|:-------|:-------------|:-------|:---------------|:-------|
+| drill_1       | 37.385 | drill_2      | 34.723 | drill_3        | 10.659 |
+| drill_4       | 60.463 | drill_5      | 27.530 | truck          | nan    |
+| traffic light | nan    | fire hydrant | nan    | stop sign      | nan    |
+| parking meter | nan    | bench        | nan    | elephant       | nan    |
+| bear          | nan    | zebra        | nan    | giraffe        | nan    |
+| backpack      | nan    | umbrella     | nan    | handbag        | nan    |
+| tie           | nan    | suitcase     | nan    | frisbee        | nan    |
+| skis          | nan    | snowboard    | nan    | sports ball    | nan    |
+| kite          | nan    | baseball bat | nan    | baseball glove | nan    |
+| skateboard    | nan    | surfboard    | nan    | tennis racket  | nan    |
+| wine glass    | nan    | cup          | nan    | fork           | nan    |
+| knife         | nan    | spoon        | nan    | bowl           | nan    |
+| banana        | nan    | apple        | nan    | sandwich       | nan    |
+| orange        | nan    | broccoli     | nan    | carrot         | nan    |
+| hot dog       | nan    | pizza        | nan    | donut          | nan    |
+| cake          | nan    | bed          | nan    | toilet         | nan    |
+| laptop        | nan    | mouse        | nan    | remote         | nan    |
+| keyboard      | nan    | cell phone   | nan    | microwave      | nan    |
+| oven          | nan    | toaster      | nan    | sink           | nan    |
+| refrigerator  | nan    | book         | nan    | clock          | nan    |
+| vase          | nan    | scissors     | nan    | teddy bear     | nan    |
+| hair drier    | nan    | toothbrush   | nan    |                |        |
+[06/25 12:05:44] d2.engine.defaults INFO: Evaluation results for fine_grained_test in csv format:
+[06/25 12:05:44] d2.evaluation.testing INFO: copypaste: Task: bbox
+[06/25 12:05:44] d2.evaluation.testing INFO: copypaste: AP,AP50,AP75,APs,APm,APl
+[06/25 12:05:44] d2.evaluation.testing INFO: copypaste: 34.1522,49.9045,40.1162,nan,nan,34.1529
