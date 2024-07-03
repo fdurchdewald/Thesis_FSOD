@@ -1,0 +1,782 @@
+{
+    "images": [
+        {
+            "file_name": "image_03003.jpg",
+            "height": 2600,
+            "width": 4624,
+            "id": 1
+        },
+        {
+            "file_name": "image_06031.jpg",
+            "height": 3024,
+            "width": 4032,
+            "id": 2
+        },
+        {
+            "file_name": "image_02001.jpg",
+            "height": 3024,
+            "width": 4032,
+            "id": 3
+        },
+        {
+            "coco_url": "",
+            "date_captured": 0,
+            "file_name": "image_07002.jpg",
+            "flickr_url": "",
+            "height": 1080,
+            "id": 4,
+            "license": 0,
+            "width": 1920
+        },
+        {
+            "file_name": "image_08017.jpg",
+            "height": 640,
+            "width": 640,
+            "id": 5
+        },
+        {
+            "file_name": "image_09003.jpg",
+            "height": 640,
+            "width": 640,
+            "id": 6
+        },
+        {
+            "file_name": "image_01002.jpg",
+            "height": 3024,
+            "width": 4032,
+            "id": 7
+        },
+        {
+            "file_name": "image_04012.jpg",
+            "height": 3024,
+            "width": 4032,
+            "id": 8
+        },
+        {
+            "file_name": "image_05006.jpg",
+            "height": 3088,
+            "width": 5488,
+            "id": 9
+        },
+        {
+            "id": 10,
+            "license": 1,
+            "file_name": "image_10004.jpg",
+            "height": 4000,
+            "width": 2250,
+            "date_captured": "2024-06-09T02:31:51+00:00"
+        }
+    ],
+    "annotations": [
+        {
+            "area": 776556,
+            "iscrowd": 0,
+            "image_id": 1,
+            "bbox": [
+                814,
+                67,
+                666,
+                1166
+            ],
+            "category_id": 1,
+            "id": 31,
+            "segmentation": []
+        },
+        {
+            "area": 4978654,
+            "iscrowd": 0,
+            "image_id": 1,
+            "bbox": [
+                1203,
+                98,
+                2159,
+                2306
+            ],
+            "category_id": 1,
+            "id": 32,
+            "segmentation": []
+        },
+        {
+            "area": 1453140,
+            "iscrowd": 0,
+            "image_id": 2,
+            "bbox": [
+                1789,
+                1333,
+                1215,
+                1196
+            ],
+            "category_id": 2,
+            "id": 161,
+            "segmentation": []
+        },
+        {
+            "area": 821348,
+            "iscrowd": 0,
+            "image_id": 3,
+            "bbox": [
+                2080,
+                49,
+                484,
+                1697
+            ],
+            "category_id": 3,
+            "id": 341,
+            "segmentation": []
+        },
+        {
+            "area": 122289.69899999996,
+            "bbox": [
+                922.98,
+                501.02,
+                355.39,
+                344.1
+            ],
+            "category_id": 4,
+            "id": 419,
+            "image_id": 4,
+            "iscrowd": 0,
+            "segmentation": []
+        },
+        {
+            "area": 132447.71000000002,
+            "bbox": [
+                202.14,
+                2.46,
+                454.6,
+                291.35
+            ],
+            "category_id": 4,
+            "id": 420,
+            "image_id": 4,
+            "iscrowd": 0,
+            "segmentation": []
+        },
+        {
+            "area": 243756,
+            "iscrowd": 0,
+            "image_id": 5,
+            "bbox": [
+                50,
+                143,
+                549,
+                444
+            ],
+            "category_id": 5,
+            "id": 716,
+            "segmentation": []
+        },
+        {
+            "area": 87465,
+            "iscrowd": 0,
+            "image_id": 6,
+            "bbox": [
+                252,
+                44,
+                147,
+                595
+            ],
+            "category_id": 6,
+            "id": 859,
+            "segmentation": []
+        },
+        {
+            "area": 1405070,
+            "iscrowd": 0,
+            "image_id": 7,
+            "bbox": [
+                1229,
+                488,
+                943,
+                1490
+            ],
+            "category_id": 7,
+            "id": 1087,
+            "segmentation": []
+        },
+        {
+            "area": 1788135,
+            "iscrowd": 0,
+            "image_id": 7,
+            "bbox": [
+                1921,
+                1016,
+                1065,
+                1679
+            ],
+            "category_id": 7,
+            "id": 1088,
+            "segmentation": []
+        },
+        {
+            "area": 316498,
+            "iscrowd": 0,
+            "image_id": 8,
+            "bbox": [
+                643,
+                1011,
+                481,
+                658
+            ],
+            "category_id": 8,
+            "id": 1445,
+            "segmentation": []
+        },
+        {
+            "area": 1536768,
+            "iscrowd": 0,
+            "image_id": 8,
+            "bbox": [
+                963,
+                1395,
+                2668,
+                576
+            ],
+            "category_id": 8,
+            "id": 1446,
+            "segmentation": []
+        },
+        {
+            "area": 256256,
+            "iscrowd": 0,
+            "image_id": 8,
+            "bbox": [
+                1806,
+                382,
+                896,
+                286
+            ],
+            "category_id": 8,
+            "id": 1447,
+            "segmentation": []
+        },
+        {
+            "area": 974168,
+            "iscrowd": 0,
+            "image_id": 9,
+            "bbox": [
+                2072,
+                1284,
+                988,
+                986
+            ],
+            "category_id": 9,
+            "id": 1487,
+            "segmentation": []
+        },
+        {
+            "id": 1549,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                957,
+                789,
+                32.42,
+                57.57
+            ],
+            "area": 1866.419,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1550,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                957,
+                875,
+                33.21,
+                63.53
+            ],
+            "area": 2109.831,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1551,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                970,
+                1438,
+                40.29,
+                71.7
+            ],
+            "area": 2888.793,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1552,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                970,
+                1535,
+                41.31,
+                76.83
+            ],
+            "area": 3173.847,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1553,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                976,
+                2200,
+                49.18,
+                90
+            ],
+            "area": 4426.2,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1554,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                982,
+                2312,
+                45.19,
+                91.53
+            ],
+            "area": 4136.241,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1555,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                990,
+                3097,
+                53.16,
+                112.99
+            ],
+            "area": 6006.548,
+            "segmentation": [],
+            "iscrowd": 0
+        },
+        {
+            "id": 1556,
+            "image_id": 10,
+            "category_id": 10,
+            "bbox": [
+                995,
+                3237,
+                49.31,
+                115.4
+            ],
+            "area": 5690.374,
+            "segmentation": [],
+            "iscrowd": 0
+        }
+    ],
+    "categories": [
+        {
+            "supercategory": "tool",
+            "id": 1,
+            "name": "cutter"
+        },
+        {
+            "supercategory": "tool",
+            "id": 2,
+            "name": "drill"
+        },
+        {
+            "supercategory": "tool",
+            "id": 3,
+            "name": "hammer"
+        },
+        {
+            "supercategory": "valve",
+            "id": 4,
+            "name": "handwheel"
+        },
+        {
+            "supercategory": "tool",
+            "id": 5,
+            "name": "plier"
+        },
+        {
+            "supercategory": "tool",
+            "id": 6,
+            "name": "screwdriver"
+        },
+        {
+            "supercategory": "tool",
+            "id": 7,
+            "name": "shovel"
+        },
+        {
+            "supercategory": "tool",
+            "id": 8,
+            "name": "spanner"
+        },
+        {
+            "supercategory": "tool",
+            "id": 9,
+            "name": "trowel"
+        },
+        {
+            "id": 10,
+            "name": "valve",
+            "supercategory": "valve"
+        },
+        {
+            "supercategory": "base",
+            "id": 11,
+            "name": "truck"
+        },
+        {
+            "supercategory": "base",
+            "id": 12,
+            "name": "traffic light"
+        },
+        {
+            "supercategory": "base",
+            "id": 13,
+            "name": "fire hydrant"
+        },
+        {
+            "supercategory": "base",
+            "id": 14,
+            "name": "stop sign"
+        },
+        {
+            "supercategory": "base",
+            "id": 15,
+            "name": "parking meter"
+        },
+        {
+            "supercategory": "base",
+            "id": 16,
+            "name": "bench"
+        },
+        {
+            "supercategory": "base",
+            "id": 17,
+            "name": "elephant"
+        },
+        {
+            "supercategory": "base",
+            "id": 18,
+            "name": "bear"
+        },
+        {
+            "supercategory": "base",
+            "id": 19,
+            "name": "zebra"
+        },
+        {
+            "supercategory": "base",
+            "id": 20,
+            "name": "giraffe"
+        },
+        {
+            "supercategory": "base",
+            "id": 21,
+            "name": "backpack"
+        },
+        {
+            "supercategory": "base",
+            "id": 22,
+            "name": "umbrella"
+        },
+        {
+            "supercategory": "base",
+            "id": 23,
+            "name": "handbag"
+        },
+        {
+            "supercategory": "base",
+            "id": 24,
+            "name": "tie"
+        },
+        {
+            "supercategory": "base",
+            "id": 25,
+            "name": "suitcase"
+        },
+        {
+            "supercategory": "base",
+            "id": 26,
+            "name": "frisbee"
+        },
+        {
+            "supercategory": "base",
+            "id": 27,
+            "name": "skis"
+        },
+        {
+            "supercategory": "base",
+            "id": 28,
+            "name": "snowboard"
+        },
+        {
+            "supercategory": "base",
+            "id": 29,
+            "name": "sports ball"
+        },
+        {
+            "supercategory": "base",
+            "id": 30,
+            "name": "kite"
+        },
+        {
+            "supercategory": "base",
+            "id": 31,
+            "name": "baseball bat"
+        },
+        {
+            "supercategory": "base",
+            "id": 32,
+            "name": "baseball glove"
+        },
+        {
+            "supercategory": "base",
+            "id": 33,
+            "name": "skateboard"
+        },
+        {
+            "supercategory": "base",
+            "id": 34,
+            "name": "surfboard"
+        },
+        {
+            "supercategory": "base",
+            "id": 35,
+            "name": "tennis racket"
+        },
+        {
+            "supercategory": "base",
+            "id": 36,
+            "name": "wine glass"
+        },
+        {
+            "supercategory": "base",
+            "id": 37,
+            "name": "cup"
+        },
+        {
+            "supercategory": "base",
+            "id": 38,
+            "name": "fork"
+        },
+        {
+            "supercategory": "base",
+            "id": 39,
+            "name": "knife"
+        },
+        {
+            "supercategory": "base",
+            "id": 40,
+            "name": "spoon"
+        },
+        {
+            "supercategory": "base",
+            "id": 41,
+            "name": "bowl"
+        },
+        {
+            "supercategory": "base",
+            "id": 42,
+            "name": "banana"
+        },
+        {
+            "supercategory": "base",
+            "id": 43,
+            "name": "apple"
+        },
+        {
+            "supercategory": "base",
+            "id": 44,
+            "name": "sandwich"
+        },
+        {
+            "supercategory": "base",
+            "id": 45,
+            "name": "orange"
+        },
+        {
+            "supercategory": "base",
+            "id": 46,
+            "name": "broccoli"
+        },
+        {
+            "supercategory": "base",
+            "id": 47,
+            "name": "carrot"
+        },
+        {
+            "supercategory": "base",
+            "id": 48,
+            "name": "hot dog"
+        },
+        {
+            "supercategory": "base",
+            "id": 49,
+            "name": "pizza"
+        },
+        {
+            "supercategory": "base",
+            "id": 50,
+            "name": "donut"
+        },
+        {
+            "supercategory": "base",
+            "id": 51,
+            "name": "cake"
+        },
+        {
+            "supercategory": "base",
+            "id": 52,
+            "name": "bed"
+        },
+        {
+            "supercategory": "base",
+            "id": 53,
+            "name": "toilet"
+        },
+        {
+            "supercategory": "base",
+            "id": 54,
+            "name": "laptop"
+        },
+        {
+            "supercategory": "base",
+            "id": 55,
+            "name": "mouse"
+        },
+        {
+            "supercategory": "base",
+            "id": 56,
+            "name": "remote"
+        },
+        {
+            "supercategory": "base",
+            "id": 57,
+            "name": "keyboard"
+        },
+        {
+            "supercategory": "base",
+            "id": 58,
+            "name": "cell phone"
+        },
+        {
+            "supercategory": "base",
+            "id": 59,
+            "name": "microwave"
+        },
+        {
+            "supercategory": "base",
+            "id": 60,
+            "name": "oven"
+        },
+        {
+            "supercategory": "base",
+            "id": 61,
+            "name": "toaster"
+        },
+        {
+            "supercategory": "base",
+            "id": 62,
+            "name": "sink"
+        },
+        {
+            "supercategory": "base",
+            "id": 63,
+            "name": "refrigerator"
+        },
+        {
+            "supercategory": "base",
+            "id": 64,
+            "name": "book"
+        },
+        {
+            "supercategory": "base",
+            "id": 65,
+            "name": "clock"
+        },
+        {
+            "supercategory": "base",
+            "id": 66,
+            "name": "vase"
+        },
+        {
+            "supercategory": "base",
+            "id": 67,
+            "name": "scissors"
+        },
+        {
+            "supercategory": "base",
+            "id": 68,
+            "name": "teddy bear"
+        },
+        {
+            "supercategory": "base",
+            "id": 69,
+            "name": "hair drier"
+        },
+        {
+            "supercategory": "base",
+            "id": 70,
+            "name": "toothbrush"
+        },
+        {
+            "supercategory": "base",
+            "id": 71,
+            "name": "empty1"
+        },
+        {
+            "supercategory": "base",
+            "id": 72,
+            "name": "empty2"
+        },
+        {
+            "supercategory": "base",
+            "id": 73,
+            "name": "empty3"
+        },
+        {
+            "supercategory": "base",
+            "id": 74,
+            "name": "empty4"
+        },
+        {
+            "supercategory": "base",
+            "id": 75,
+            "name": "empty5"
+        },
+        {
+            "supercategory": "base",
+            "id": 76,
+            "name": "empty6"
+        },
+        {
+            "supercategory": "base",
+            "id": 77,
+            "name": "empty7"
+        },
+        {
+            "supercategory": "base",
+            "id": 78,
+            "name": "empty8"
+        },
+        {
+            "supercategory": "base",
+            "id": 79,
+            "name": "empty9"
+        },
+        {
+            "supercategory": "base",
+            "id": 80,
+            "name": "empty10"
+        }
+    ]
+}
